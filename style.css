@@ -1,59 +1,78 @@
-/* ===== Reset (light) ===== */
+/* ===== Reset ===== */
 * {
   box-sizing: border-box;
 }
 
-/* ===== Color system (calm) ===== */
+/* ===== Color system (academic) ===== */
 :root {
   --text: #1c1e21;
   --muted: #6b7280;
   --primary: #1f3a5f;
   --link: #1a5fb4;
-  --bg: #ffffff;
   --border: #e5e7eb;
+  --bg: #ffffff;
 }
 
-/* ===== Base typography ===== */
+/* ===== Base ===== */
 body {
   margin: 0;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 16px;
   line-height: 1.65;
   color: var(--text);
   background: var(--bg);
 }
 
-h1, h2, h3, h4 {
-  font-weight: 600;
-  letter-spacing: -0.015em;
-  margin-top: 0;
+/* ===== Header ===== */
+header {
+  max-width: 960px;
+  margin: 4rem auto 2rem;
+  padding: 0 1.5rem;
 }
 
-h3 {
-  font-size: 1.4rem;
-  margin-bottom: 1.5rem;
+header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.25rem;
 }
 
-h4 {
+header h2 {
   font-size: 1.1rem;
-  margin-bottom: 0.5rem;
+  font-weight: 400;
+  color: var(--muted);
 }
 
-/* ===== Links ===== */
-a {
+/* ===== Navigation ===== */
+nav {
+  margin-top: 1.5rem;
+}
+
+nav a {
+  margin-right: 1.25rem;
+  font-size: 0.95rem;
   color: var(--link);
   text-decoration: none;
 }
 
-a:hover {
+nav a:hover {
   text-decoration: underline;
 }
 
-/* ===== Layout ===== */
+/* ===== Sections ===== */
 section {
   max-width: 960px;
   margin: 3rem auto;
   padding: 0 1.5rem;
+}
+
+section h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+/* ===== Text ===== */
+.lead {
+  font-size: 1.05rem;
+  max-width: 800px;
 }
 
 /* ===== Grid ===== */
@@ -63,29 +82,21 @@ section {
   gap: 1.75rem;
 }
 
-/* ===== Cards (very subtle) ===== */
+/* ===== Cards ===== */
 .card {
   border: 1px solid var(--border);
   padding: 1.5rem 1.75rem;
   border-radius: 6px;
-  background: #fff;
 }
 
-.card:hover {
-  border-color: #d1d5db;
+.card h4 {
+  margin-top: 0;
+  font-size: 1.05rem;
 }
 
-/* ===== Metadata ===== */
-.meta {
-  font-size: 0.85rem;
-  color: var(--muted);
-  margin-bottom: 0.75rem;
-}
-
-/* ===== Links row ===== */
-.links {
-  margin-top: 0.75rem;
-  font-size: 0.9rem;
+/* ===== Lists ===== */
+ul {
+  padding-left: 1.25rem;
 }
 
 /* ===== Footer ===== */
