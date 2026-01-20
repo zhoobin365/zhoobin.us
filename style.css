@@ -93,6 +93,15 @@ section h3 {
   margin-top: 0;
   font-size: 1.05rem;
 }
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.card-link:hover .card {
+  border-color: #d1d5db;
+}
 
 /* ===== Lists ===== */
 ul {
