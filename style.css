@@ -1,32 +1,47 @@
-/* ===== Base Theme ===== */
-:root {
-  --primary: #0f2a44;
-  --secondary: #1f6aa5;
-  --accent: #4fa3c7;
-  --text: #1f2933;
-  --muted: #6b7280;
-  --bg: #f8fafc;
-  --card: #ffffff;
+/* ===== Reset (light) ===== */
+* {
+  box-sizing: border-box;
 }
 
-/* ===== Global ===== */
+/* ===== Color system (calm) ===== */
+:root {
+  --text: #1c1e21;
+  --muted: #6b7280;
+  --primary: #1f3a5f;
+  --link: #1a5fb4;
+  --bg: #ffffff;
+  --border: #e5e7eb;
+}
+
+/* ===== Base typography ===== */
 body {
   margin: 0;
-  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   font-size: 16px;
-  line-height: 1.7;
+  line-height: 1.65;
   color: var(--text);
-  background-color: var(--bg);
+  background: var(--bg);
 }
 
 h1, h2, h3, h4 {
   font-weight: 600;
-  letter-spacing: -0.02em;
-  color: var(--primary);
+  letter-spacing: -0.015em;
+  margin-top: 0;
 }
 
+h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ===== Links ===== */
 a {
-  color: var(--secondary);
+  color: var(--link);
   text-decoration: none;
 }
 
@@ -36,51 +51,49 @@ a:hover {
 
 /* ===== Layout ===== */
 section {
-  max-width: 1100px;
-  margin: auto;
-  padding: 4rem 2rem;
+  max-width: 960px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
 }
 
+/* ===== Grid ===== */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
 }
 
-/* ===== Cards ===== */
+/* ===== Cards (very subtle) ===== */
 .card {
-  background: var(--card);
-  border-radius: 14px;
-  padding: 2rem;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid var(--border);
+  padding: 1.5rem 1.75rem;
+  border-radius: 6px;
+  background: #fff;
 }
 
 .card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 14px 30px rgba(0,0,0,0.08);
+  border-color: #d1d5db;
 }
 
-.card h4 {
-  margin-top: 0;
-}
-
-/* ===== Project Metadata ===== */
+/* ===== Metadata ===== */
 .meta {
   font-size: 0.85rem;
   color: var(--muted);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
+/* ===== Links row ===== */
 .links {
-  margin-top: 1rem;
-  font-weight: 500;
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
 }
 
 /* ===== Footer ===== */
 footer {
-  background: #0c1e2e;
-  color: white;
+  border-top: 1px solid var(--border);
+  margin-top: 4rem;
+  padding: 2rem 1.5rem;
+  font-size: 0.85rem;
+  color: var(--muted);
   text-align: center;
-  padding: 2rem;
 }
