@@ -1,47 +1,176 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Urban Land Subsidence – Hoboken, NJ</title>
-  <meta name="description" content="InSAR-based land subsidence monitoring in Hoboken, NJ">
-  <style>
-    body { font-family: Arial, sans-serif; max-width: 900px; margin: auto; padding: 2rem; line-height: 1.6; }
-    h1, h2 { color: #0f2a44; }
-    a { color: #1f6aa5; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tailings Storage Facility Monitoring | Zhoobin Rahimi</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #ffffff;
+  color: #1a1a1a;
+  line-height: 1.7;
+}
+
+.hero {
+  background: linear-gradient(120deg, #0f2a44, #1f6aa5);
+  color: white;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 3rem 2rem;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+h2 {
+  color: #0f2a44;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.lead {
+  font-size: 1.1rem;
+}
+
+.highlight-box {
+  background: #f5f8fc;
+  padding: 2rem;
+  border-left: 6px solid #1f6aa5;
+  border-radius: 6px;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  background: #1f6aa5;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #154e7c;
+}
+
+.back-link {
+  margin-top: 3rem;
+  display: inline-block;
+  color: #1f6aa5;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #f0f3f7;
+  font-size: 0.9rem;
+}
+</style>
 </head>
+
 <body>
 
-<h1>InSAR-Based Monitoring for Tailings Dam Safety</h1>
-<p><strong>Study Area:</strong> Morenci, Arizona</p>
+<!-- HERO SECTION -->
+<section class="hero">
+  <h1>InSAR-Based Monitoring for Tailings Dam Safety</h1>
+  <p>Morenci, Arizona | Satellite Deformation Analysis & Risk Assessment</p>
+</section>
 
-<h2>Research Motivation</h2>
-  <p class="lead">
-    Satellite-based Interferometric Synthetic Aperture Radar (InSAR) was utilized to
-    detect and quantify millimeter-scale surface deformation at tailings dam facilities,
-    supporting early identification of instability mechanisms and long-term performance assessment.
-  </p>
-<h2>Data & Methods</h2>
-<ul>
-  <li>Sentinel-1 SAR (InSAR time series)</li>
-  <li>Geotechnical borehole and piezometric head</li>
-  <li>Time-series deformation analysis</li>
-</ul>
+<div class="container">
 
-<h2>Interactive Visualization</h2>
-<p>
-The interactive deformation map is available below:
-</p>
+  <!-- OVERVIEW -->
+  <section>
+    <h2>Project Overview</h2>
+    <p class="lead">
+      Satellite-based Interferometric Synthetic Aperture Radar (InSAR) was applied to
+      detect and quantify millimeter-scale surface deformation at a tailings storage facility.
+      The objective was to support early identification of instability mechanisms and
+      provide long-term performance assessment using remote sensing techniques.
+    </p>
+  </section>
 
-<p>
-<a href="https://ee-zr110.projects.earthengine.app/view/morencitailing" target="_blank">
-🔗 Open Interactive Earth Engine App
-</a>
-</p>
+  <!-- CHALLENGE STYLE SECTION -->
+  <section>
+    <h2>Engineering Context</h2>
+    <div class="highlight-box">
+      Tailings storage facilities represent high-consequence infrastructure.
+      Continuous monitoring is critical to detect progressive deformation,
+      slope instability, and hydro-mechanical responses before failure conditions develop.
+    </div>
+  </section>
 
+  <!-- METHODS -->
+  <section>
+    <h2>Data & Methods</h2>
+    <ul>
+      <li>Sentinel-1 SAR time-series processing (InSAR)</li>
+      <li>Millimeter-scale deformation velocity extraction</li>
+      <li>Integration with geotechnical borehole data</li>
+      <li>Piezometric head correlation analysis</li>
+      <li>Temporal trend evaluation for stability assessment</li>
+    </ul>
+  </section>
 
-<p><a href="../index.html">← Back to main site</a></p>
+  <!-- RESULTS -->
+  <section>
+    <h2>Key Outcomes</h2>
+    <ul>
+      <li>Identification of spatial deformation gradients across embankment zones</li>
+      <li>Detection of long-term settlement trends</li>
+      <li>Correlation between pore pressure variations and surface displacement</li>
+      <li>Demonstration of satellite monitoring as an early-warning support tool</li>
+    </ul>
+  </section>
+
+  <!-- INTERACTIVE MAP -->
+  <section>
+    <h2>Interactive Deformation Map</h2>
+    <p>
+      The full deformation time-series visualization is available through
+      the Google Earth Engine application below.
+    </p>
+
+    <a href="https://ee-zr110.projects.earthengine.app/view/morencitailing"
+       target="_blank"
+       class="btn">
+       View Interactive Earth Engine Application
+    </a>
+  </section>
+
+  <a href="index.html" class="back-link">← Back to Portfolio</a>
+
+</div>
+
+<footer>
+  © 2026 Zhoobin Rahimi | Geospatial Monitoring Portfolio
+</footer>
 
 </body>
 </html>
